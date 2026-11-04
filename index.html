@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download Trail</title>
+  <meta name="description" content="Install Trail on your Windows PC and keep your plans, goals, tasks and money in one place.">
+  <meta name="color-scheme" content="light">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="stylesheet" href="site.css">
+  <script src="site.js" defer></script>
+</head>
+<body id="top">
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3.5 V15 M7 10.5 l5 5 5 -5 M4.5 20.5 h15"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12 h15 M13.5 6 l6 6 -6 6"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><path d="M4.5 4 h15 a1.5 1.5 0 0 1 1.5 1.5 v9 a1.5 1.5 0 0 1 -1.5 1.5 h-15 a1.5 1.5 0 0 1 -1.5 -1.5 v-9 A1.5 1.5 0 0 1 4.5 4 Z M9 20 h6 M12 16 v4"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7.5 2.5 h9 a1.5 1.5 0 0 1 1.5 1.5 v16 a1.5 1.5 0 0 1 -1.5 1.5 h-9 a1.5 1.5 0 0 1 -1.5 -1.5 V4 a1.5 1.5 0 0 1 1.5 -1.5 Z M10.5 18.5 h3"/></symbol>
+    <symbol id="i-plan" viewBox="0 0 24 24"><path d="M5.5 4.5 h13 a2.5 2.5 0 0 1 2.5 2.5 v11 a2.5 2.5 0 0 1 -2.5 2.5 h-13 a2.5 2.5 0 0 1 -2.5 -2.5 v-11 a2.5 2.5 0 0 1 2.5 -2.5 Z M3 9.5 h18 M8 2.5 v4 M16 2.5 v4"/></symbol>
+    <symbol id="i-task" viewBox="0 0 24 24"><path d="M6.5 3.5 h11 a3 3 0 0 1 3 3 v11 a3 3 0 0 1 -3 3 h-11 a3 3 0 0 1 -3 -3 v-11 a3 3 0 0 1 3 -3 Z M7.5 12.2 l3 3 6 -6.4"/></symbol>
+    <symbol id="i-goal" viewBox="0 0 24 24"><path d="M3.5 12 a8.5 8.5 0 1 0 17 0 a8.5 8.5 0 1 0 -17 0 Z M7.5 12 a4.5 4.5 0 1 0 9 0 a4.5 4.5 0 1 0 -9 0 Z M11.9 12 h0.2"/></symbol>
+    <symbol id="i-money" viewBox="0 0 24 24"><path d="M4 20 V11 M9.3 20 V4.5 M14.7 20 v-6 M20 20 V8"/></symbol>
+    <symbol id="i-idea" viewBox="0 0 24 24"><path d="M9 18 h6 M10 21 h4 M12 2.8 a6 6 0 0 0 -3.6 10.8 c0.6 0.5 0.9 1.1 0.9 1.8 V16 h5.4 v-0.6 c0 -0.7 0.3 -1.3 0.9 -1.8 A6 6 0 0 0 12 2.8 Z"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><path d="M9 11.5 a3.5 3.5 0 1 0 0 -7 a3.5 3.5 0 1 0 0 7 Z M2.5 20 c0 -3.6 2.9 -6 6.5 -6 c3.6 0 6.5 2.4 6.5 6 M16 4.6 a3.5 3.5 0 0 1 0 6.6 M18.2 14.4 c2 0.8 3.3 2.9 3.3 5.6"/></symbol>
+  </svg>
+
+  <header class="bar">
+    <a class="brand" href="#top"><img src="assets/trail-logo.png" alt="Trail" width="126" height="28"></a>
+    <nav aria-label="This page">
+      <a href="#top">Home</a>
+      <a href="#apps">Apps</a>
+      <a href="#what">What Trail does</a>
+      <a class="here" href="#apps" aria-current="page">Download</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <aside class="invited" id="invited" aria-labelledby="invited-title" hidden>
+        <h2 id="invited-title">You have an invitation waiting</h2>
+        <ol>
+          <li>Download Trail, and open the file. If Windows warns you, press More info, then Run anyway.</li>
+          <li>Sign up or sign in with the address the invitation went to.</li>
+          <li>Press the bell at the top of Trail, then Accept or Decline.</li>
+        </ol>
+        <p>Already have Trail? Open it and press the bell. On a phone? Trail runs on Windows, so open this page on your PC.</p>
+      </aside>
+
+      <h1>Plan, track, and move forward together</h1>
+      <p class="lead">Install Trail on your Windows PC and keep your plans, goals, tasks and money in one place.</p>
+      <a class="btn btn-accent" href="#apps" data-download>
+        <svg class="glyph" aria-hidden="true"><use href="#i-download"/></svg>
+        Download Now
+      </a>
+      <p class="not-ready" data-not-ready role="status" hidden>The download is not up yet. Check back soon.</p>
+    </section>
+
+    <section class="apps" id="apps" aria-label="Where Trail runs">
+      <article class="app app-main">
+        <span class="disc"><svg class="glyph" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+        <div class="app-words">
+          <p class="kicker">Desktop</p>
+          <h2>Windows PC</h2>
+          <p>Your plans, goals, tasks and money in one place. For 64-bit Windows 10 and Windows 11.</p>
+          <a class="btn btn-white" href="#apps" data-download aria-label="Download Trail for Windows">
+            <svg class="glyph" aria-hidden="true"><use href="#i-download"/></svg>
+            Download
+          </a>
+        </div>
+      </article>
+
+      <article class="app">
+        <span class="disc"><svg class="glyph" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <div class="app-words">
+          <p class="kicker">Mobile Phone</p>
+          <h2>iOS</h2>
+          <p>Trail runs on Windows for now. There is no iPhone app yet.</p>
+          <span class="not-yet">Not available yet</span>
+        </div>
+      </article>
+
+      <article class="app">
+        <span class="disc"><svg class="glyph" aria-hidden="true"><use href="#i-phone"/></svg></span>
+        <div class="app-words">
+          <p class="kicker">Mobile Phone / Tablet</p>
+          <h2>Android</h2>
+          <p>Trail runs on Windows for now. There is no Android app yet.</p>
+          <span class="not-yet">Not available yet</span>
+        </div>
+      </article>
+
+      <p class="apps-note" id="windows-warning">Windows may say "Windows protected your PC", because Trail is new to it and its setup file is not signed. Press More info, then Run anyway. Trail installs for you alone, and needs no administrator. If Windows refuses it outright, Smart App Control is on, and Trail cannot go on that PC yet.</p>
+    </section>
+
+    <section class="what" id="what" aria-labelledby="what-title">
+      <p class="eyebrow">What Trail does</p>
+      <h2 id="what-title">Everything your plans need, in one place</h2>
+      <div class="cards">
+        <article class="card">
+          <p>Lay a plan out on the Canvas, the Timeline, a List or a Board, and see your days on the Calendar. Each one shows the same records.</p>
+          <div class="who">
+            <span class="dot"><svg class="glyph" aria-hidden="true"><use href="#i-plan"/></svg></span>
+            <div><h3>Plans</h3><p>Look at them your way</p></div>
+          </div>
+        </article>
+        <article class="card">
+          <p>Give each task a date, its people and a checklist. See what is yours, what is everyone's, and what nobody has taken yet.</p>
+          <div class="who">
+            <span class="dot"><svg class="glyph" aria-hidden="true"><use href="#i-task"/></svg></span>
+            <div><h3>Tasks</h3><p>Mine, Everyone, Unassigned</p></div>
+          </div>
+        </article>
+        <article class="card">
+          <p>Turn your big plans into progress. Connect goals, milestones and everyday tasks, and see how far along you are.</p>
+          <div class="who">
+            <span class="dot"><svg class="glyph" aria-hidden="true"><use href="#i-goal"/></svg></span>
+            <div><h3>Goals</h3><p>Goals and milestones</p></div>
+          </div>
+        </article>
+        <article class="card">
+          <p>Keep what comes in and what goes out beside the plan it belongs to. Every chart also says its numbers in words.</p>
+          <div class="who">
+            <span class="dot"><svg class="glyph" aria-hidden="true"><use href="#i-money"/></svg></span>
+            <div><h3>Money</h3><p>Spending, income and funding</p></div>
+          </div>
+        </article>
+        <article class="card">
+          <p>Write down the possibilities you have not committed to. Explore them, park them, and come back when you are ready.</p>
+          <div class="who">
+            <span class="dot"><svg class="glyph" aria-hidden="true"><use href="#i-idea"/></svg></span>
+            <div><h3>Ideas</h3><p>Exploring, Parked, Done</p></div>
+          </div>
+        </article>
+        <article class="card">
+          <p>Invite people by @handle or email and choose what each one can do. Your records stay on your computer until you turn on sync.</p>
+          <div class="who">
+            <span class="dot"><svg class="glyph" aria-hidden="true"><use href="#i-people"/></svg></span>
+            <div><h3>People</h3><p>You choose who sees what</p></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="ready" aria-labelledby="ready-title">
+      <img class="ready-photo" src="assets/trail-in-hand.webp" alt="A hand holding a phone with the Trail logo on its screen." width="1672" height="941" loading="lazy">
+      <div class="ready-words">
+        <h2 id="ready-title">Ready to plan, track, and move forward with Trail?</h2>
+        <div class="ready-actions">
+          <a class="btn btn-white" href="#apps">Get Started</a>
+          <a class="btn btn-ghost" href="#what">
+            Learn more
+            <svg class="glyph" aria-hidden="true"><use href="#i-arrow"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="foot-card">
+      <div class="foot-brand">
+        <img src="assets/trail-logo.png" alt="Trail" width="126" height="28">
+        <p>Trail helps you plan, track, and move forward together.</p>
+      </div>
+      <nav class="foot-links" aria-label="More of this page">
+        <div>
+          <h3>What Trail does</h3>
+          <a href="#what">Plans</a>
+          <a href="#what">Tasks</a>
+          <a href="#what">Goals</a>
+          <a href="#what">Money</a>
+          <a href="#what">Ideas</a>
+          <a href="#what">People</a>
+        </div>
+        <div>
+          <h3>Use Trail</h3>
+          <a href="#apps">Windows PC</a>
+          <span>iPhone: not yet</span>
+          <span>Android: not yet</span>
+        </div>
+      </nav>
+    </div>
+    <div class="foot-name" aria-hidden="true">Trail</div>
+  </footer>
+</body>
+</html>
