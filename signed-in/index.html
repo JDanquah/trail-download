@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trail</title>
+  <meta name="description" content="Where signing in to Trail comes back to.">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="stylesheet" href="../site.css">
+  <link rel="stylesheet" href="signed-in.css">
+  <script src="../site.js" defer></script>
+  <script src="signed-in.js" defer></script>
+</head>
+<body class="back-page">
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M4.5 12.5 l5 5 10 -11"/></symbol>
+    <symbol id="i-open" viewBox="0 0 24 24"><path d="M14 4 h6 v6 M20 4 l-9 9 M18 14 v4.5 a1.5 1.5 0 0 1 -1.5 1.5 h-11 a1.5 1.5 0 0 1 -1.5 -1.5 v-11 a1.5 1.5 0 0 1 1.5 -1.5 H10"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><path d="M14.5 15 a5.5 5.5 0 1 0 -5 -3.2 L3.5 17.8 V20.5 h3 V18 h2.5 v-2.5 h2 l.9 -.9 a5.5 5.5 0 0 0 2.6 .4 Z M16.5 7.5 h0.1"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><path d="M4.5 4 h15 a1.5 1.5 0 0 1 1.5 1.5 v9 a1.5 1.5 0 0 1 -1.5 1.5 h-15 a1.5 1.5 0 0 1 -1.5 -1.5 v-9 A1.5 1.5 0 0 1 4.5 4 Z M9 20 h6 M12 16 v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><path d="M3.5 12 a8.5 8.5 0 1 0 17 0 a8.5 8.5 0 1 0 -17 0 Z M12 7 v5.5 h4"/></symbol>
+    <symbol id="i-again" viewBox="0 0 24 24"><path d="M4 5 v5.5 h5.5 M4.6 10.5 A8 8 0 1 1 4 14"/></symbol>
+  </svg>
+
+  <header class="bar">
+    <a class="brand" href="../"><img src="../assets/trail-logo.png" alt="Trail" width="126" height="28"></a>
+    <div class="bar-end">
+      <nav aria-label="Trail's website">
+        <a href="../">Home</a>
+        <a href="../#what">Features</a>
+        <a href="../#apps">Apps</a>
+      </nav>
+      <a class="btn btn-accent" href="../#apps" data-download>Download</a>
+    </div>
+  </header>
+
+  <main class="back-main">
+    <noscript>
+      <section class="back">
+        <h1>Go back to Trail</h1>
+        <p class="back-lead">Sign in again from Trail on your Windows PC.</p>
+      </section>
+    </noscript>
+
+    <section class="back" data-state="signed-in" hidden>
+      <span class="back-disc"><svg class="glyph" aria-hidden="true"><use href="#i-check"/></svg></span>
+      <h1>You&rsquo;re signed in</h1>
+      <p class="back-lead">Go back to Trail to continue.</p>
+      <p class="back-note">You can close this tab.</p>
+    </section>
+
+    <section class="back" data-state="confirmed" hidden>
+      <span class="back-disc"><svg class="glyph" aria-hidden="true"><use href="#i-check"/></svg></span>
+      <h1>Email confirmed</h1>
+      <p class="back-lead">Open Trail on this PC to continue.</p>
+      <a class="btn btn-accent btn-big" href="trail://open" data-trail>
+        <svg class="glyph" aria-hidden="true"><use href="#i-open"/></svg>
+        Open Trail
+      </a>
+      <p class="back-note">Nothing happened? <a href="../#apps" data-download>Download Trail for Windows</a></p>
+    </section>
+
+    <section class="back" data-state="reset" hidden>
+      <span class="back-disc"><svg class="glyph" aria-hidden="true"><use href="#i-key"/></svg></span>
+      <h1>Set your new password in Trail</h1>
+      <p class="back-lead">Open Trail on this PC to choose a new password.</p>
+      <a class="btn btn-accent btn-big" href="trail://open" data-trail>
+        <svg class="glyph" aria-hidden="true"><use href="#i-open"/></svg>
+        Open Trail
+      </a>
+      <p class="back-note">You can close this tab after Trail opens.</p>
+    </section>
+
+    <section class="back back-open" data-state="elsewhere" hidden>
+      <span class="back-disc"><svg class="glyph" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+      <h1>Email confirmed</h1>
+      <p class="back-lead">Carry on in Trail on your Windows PC.</p>
+      <aside class="back-aside">
+        <span class="dot"><svg class="glyph" aria-hidden="true"><use href="#i-key"/></svg></span>
+        <div>
+          <h2>Resetting your password?</h2>
+          <p>Open the password reset link on your Windows PC to set a new password in Trail.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="back back-open" data-state="elsewhere-reset" hidden>
+      <span class="back-disc"><svg class="glyph" aria-hidden="true"><use href="#i-monitor"/></svg></span>
+      <h1>Set your new password on your PC</h1>
+      <p class="back-lead">This link only works in Trail on your Windows PC. In Trail there, ask for a new reset link and open it on that PC.</p>
+    </section>
+
+    <section class="back" data-state="expired" hidden>
+      <span class="back-disc"><svg class="glyph" aria-hidden="true"><use href="#i-clock"/></svg></span>
+      <h1>This link has expired or was already used</h1>
+      <p class="back-lead">Go back to Trail and ask for a new link.</p>
+      <a class="btn btn-accent btn-big" href="trail://open" data-trail>Go to Trail</a>
+      <p class="back-note">Then open the latest email from Trail.</p>
+    </section>
+
+    <section class="back" data-state="google-failed" hidden>
+      <span class="back-disc"><svg class="glyph" aria-hidden="true"><use href="#i-again"/></svg></span>
+      <h1>Google sign-in didn&rsquo;t finish</h1>
+      <p class="back-lead">Go back to Trail and try again.</p>
+      <p class="back-note">Sign-in may have been cancelled or could not be completed.</p>
+    </section>
+  </main>
+
+  <footer class="back-foot">
+    <img src="../assets/trail-logo.png" alt="Trail" width="126" height="28">
+  </footer>
+</body>
+</html>

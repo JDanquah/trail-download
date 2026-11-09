@@ -1,0 +1,46 @@
+/* Where signing in comes back to, from James's mockups of 2026-11-05
+   (docs/mockups/desktop/86 to 91). Its own file, on top of ../site.css's tokens,
+   because a returning visitor's browser may hold an older site.css. */
+
+.back-page { display: flex; flex-direction: column; min-height: 100vh; }
+.bar-end { display: flex; align-items: center; gap: clamp(14px, 3vw, 36px); }
+.back-main { flex: 1; display: grid; place-items: center; padding: 110px var(--gutter) 64px; }
+
+.back { display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 900px; padding: clamp(32px, 4vw, 44px) clamp(20px, 5vw, 64px); border: 1px solid var(--line); border-radius: 24px; background: var(--paper); text-align: center; }
+.back[hidden] { display: none; }
+.back-open { max-width: 980px; padding: 0; border: 0; background: none; }
+
+.back-disc { display: grid; place-items: center; flex: none; width: 104px; height: 104px; margin-bottom: 24px; border-radius: 50%; background: var(--wash); color: var(--accent); }
+.back-disc .glyph { width: 46px; height: 46px; stroke-width: 2; }
+.back h1 { font-family: var(--font-display); font-size: clamp(32px, 4vw, 52px); line-height: 1.15; font-weight: 700; letter-spacing: -0.02em; text-wrap: balance; }
+.back-lead { max-width: 34em; margin-top: 12px; color: var(--muted); font-size: clamp(18px, 1.8vw, 22px); }
+.back-note { margin-top: 18px; color: var(--muted); font-size: 17px; }
+.back-note a { color: var(--accent); text-underline-offset: 3px; }
+
+.btn-big { min-height: 60px; min-width: min(280px, 100%); margin-top: 28px; padding: 0 36px; font-size: 19px; }
+.btn-big[hidden] { display: none; }
+.btn-big .glyph { width: 24px; height: 24px; }
+
+.back-aside { display: flex; align-items: center; gap: 24px; width: 100%; margin-top: 44px; padding: 28px clamp(20px, 3vw, 36px); border-radius: 20px; background: var(--paper); text-align: left; }
+.back-aside > div { min-width: 0; }
+.back-aside .dot { width: 64px; height: 64px; background: var(--card); }
+.back-aside .glyph { width: 28px; height: 28px; }
+.back-aside h2 { font-size: clamp(20px, 2vw, 26px); line-height: 1.25; font-weight: 700; }
+.back-aside p { margin-top: 4px; color: var(--muted); font-size: 18px; }
+
+.back-foot { width: 100%; max-width: var(--page); margin: 0 auto; padding: 0 var(--gutter); }
+.back-foot img { box-sizing: content-box; height: 28px; width: auto; padding: 28px 0; }
+.back-foot::before { content: ""; display: block; border-top: 1px solid var(--line); }
+
+/* A phone. */
+@media (max-width: 560px) {
+  .bar-end nav { display: none; }
+  .back-main { padding-top: 96px; }
+  .back-disc { width: 80px; height: 80px; margin-bottom: 18px; }
+  .back-disc .glyph { width: 36px; height: 36px; }
+  .back-note { font-size: 16px; }
+  .back-aside { gap: 16px; margin-top: 32px; padding: 20px; }
+  .back-aside .dot { width: 48px; height: 48px; }
+  .back-aside .glyph { width: 22px; height: 22px; }
+  .back-aside p { font-size: 16px; }
+}
